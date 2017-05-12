@@ -1,0 +1,9 @@
+#header {
+    margin: 0 auto;
+}
+
+.display {
+    display: inline;
+    height: 300 px;
+    width: 200 px;
+}

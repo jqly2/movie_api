@@ -1,0 +1,14 @@
+<div id="header">
+    <h1> Results </h1>
+    <form action="/results" method="POST">
+        <input type="text" placeholder="search term" name="search">
+        <input type="submit">
+    </form>
+</div>
+
+
+    <% data["Search"].forEach(function(movie){ %>
+        <form id="display" action="/display" method="POST">
+            <button name="title" type="submit" value= <%= movie["imdbID"] %>> <img src=<%= movie["Poster"] %> alt= <%= movie["Title"] %> style= "height: 350px; width: 250px;"> </button>
+        </div>
+    <% }); %>
